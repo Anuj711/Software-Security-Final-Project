@@ -4,7 +4,7 @@ package crypto;
 
 import java.io.FileInputStream;
 import java.security.*;
-import java.security.cert.Certificate;
+import java.security.cert.*;
 
 public class KeyManager {
 
@@ -15,7 +15,7 @@ public class KeyManager {
     }
 
     public static PublicKey getPublicKey(String certPath) throws Exception {
-        Certificate cert = CertificateFactory.getInstance("X.509")
+        java.security.cert.Certificate cert = CertificateFactory.getInstance("X.509")
                 .generateCertificate(new FileInputStream(certPath));
         return cert.getPublicKey();
     }
