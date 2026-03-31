@@ -2,6 +2,7 @@ package handshake;
 
 import java.security.MessageDigest;
 import java.util.Arrays;
+
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
@@ -40,3 +41,4 @@ public class HandshakeManager {
         return new SecretKeySpec(keyBytes, "AES");
     }
 }
+

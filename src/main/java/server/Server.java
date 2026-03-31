@@ -1,14 +1,16 @@
 package server;
 
-import crypto.KeyManager;
-import crypto.RSAUtil;
-import handshake.HandshakeManager;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.security.PrivateKey;
+
 import javax.crypto.SecretKey;
+
+import crypto.KeyManager;
+import crypto.RSAUtil;
+import handshake.HandshakeManager;
 import record.RecordLayer;
 
 /**

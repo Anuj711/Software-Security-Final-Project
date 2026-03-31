@@ -1,4 +1,4 @@
-//Server Hello
+//Server class
 
 package handshake;
 
@@ -12,3 +12,4 @@ public class ServerHello {
         new SecureRandom().nextBytes(serverRandom);
     }
 }
+

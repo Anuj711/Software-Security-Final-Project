@@ -1,4 +1,4 @@
-// Client Hello
+// Client class
 
 package handshake;
 
@@ -12,3 +12,4 @@ public class ClientHello {
         new SecureRandom().nextBytes(clientRandom);
     }
 }
+
