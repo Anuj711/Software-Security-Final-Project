@@ -1,12 +1,13 @@
 package handshake;
 
-import org.junit.jupiter.api.Test;
-
-import javax.crypto.SecretKey;
 import java.security.SecureRandom;
 
-import static org.junit.jupiter.api.Assertions.*;
+import javax.crypto.SecretKey;
 
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import org.junit.jupiter.api.Test;
+
+//TEST CASE TO PROVE HANDSHAKE WORKS
 public class HandshakeTest {
 
     @Test
